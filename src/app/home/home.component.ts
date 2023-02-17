@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
     onSubmit()
     {
-
+      alert("Signup if you are a first time user.Else,Login")
     }
 
 

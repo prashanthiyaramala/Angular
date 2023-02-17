@@ -36,8 +36,9 @@ export class LoginComponent implements OnInit {
       if(this.loginForm.valid)
 
     {
-      console.log(this.loginForm.value)
       //send obj to database
+      console.log(this.loginForm.value)
+
     }
 
     else

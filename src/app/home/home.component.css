@@ -18,8 +18,24 @@ header{
   position: relative;
 }
 
-.btn
-{
-  color:#b6f38e;
-  padding-left: 0%;
+
+input[type="submit"] {
+  background: #3d5c17;
+  color: #28c244;
+  border: none;
+  font-size: 0.8em;
+  padding: 15px 15px;
+  /* margin: 20px; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+button {
+  background: #3d5c17;
+  color: #28c244;
+  border: none;
+  font-size: 0.8em;
+  padding: 15px 15px;
+  /* margin: 20px; */
+  border-radius: 5px;
+  cursor: pointer;
 }
