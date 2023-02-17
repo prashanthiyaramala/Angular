@@ -1,0 +1,25 @@
+
+.outer{
+  height:100vh;
+  padding-top: 4em;
+  background:linear-gradient(to top, #b6f38e 50%,#eb9b08 80%)no-repeat;
+
+}
+
+header{
+  padding: 150px;
+  background-color:rgb(255, 176, 29);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  text-align: center;
+  position: relative;
+}
+
+.btn
+{
+  color:#b6f38e;
+  padding-left: 0%;
+}

@@ -5,11 +5,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SignupComponent } from './signup/signup.component';
+import { CertificategenerationComponent } from './certificategeneration/certificategeneration.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    CertificategenerationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
