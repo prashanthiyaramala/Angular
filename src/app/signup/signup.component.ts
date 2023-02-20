@@ -14,7 +14,8 @@ export class SignupComponent implements OnInit {
   isText: boolean = false;
   eyeIcon: string ="fa-eye-slash";
   signUpForm!:FormGroup;
- constructor(private fb:FormBuilder) { }
+
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit():void{
     this.signUpForm=this.fb.group({

@@ -1,13 +1,16 @@
 .outer{
   height:100vh;
   padding-top: 4em;
-  background:linear-gradient(to top, #b6f38e 50%,#eb9b08 80%)no-repeat;
+  background:linear-gradient(to top, #b6f38e 50%,#eb9b08 60%)no-repeat;
 }
 .panel-heading{
   text-align: center;
   margin-bottom: 10px;
 }
-
+#h3
+{
+  color: #ddd;
+}
 
 #forget{
   min-width: 100px;
@@ -84,7 +87,7 @@ position: relative;
   padding : 0 8px;
 }
 
-    
+
 
 
 
