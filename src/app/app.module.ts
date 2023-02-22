@@ -8,6 +8,7 @@ import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { DetailsComponent } from './details/details.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { DetailsComponent } from './details/details.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],

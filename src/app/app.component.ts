@@ -7,9 +7,10 @@ import {jsPDF} from 'jspdf';
 })
 export class AppComponent {
   title = 'CertificateGenerationandVerification';
-  makePDF() {
-    let pdf = new jsPDF();
-    pdf.text("Hello",10,10);
-    pdf.save();
+  //makePDF() {
+   // let pdf = new jsPDF();
+   // pdf.text("Hello",10,10);
+   // pdf.save();
+   //url="./assets/badge.jpg";
   }
-}
+

@@ -1,21 +1,50 @@
 <div class="outer">
-<h1>Internship Form:</h1>
-    <form>
-      <label for="intern-name">Intern Name:</label>
-      <input type="text" id="intern-name" name="intern-name"><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="offset-md-2 col-lg-5  col-md-7 offset-lg-4  offset-md-3">
+        <div class="panel border bg-white">
+          <div class="panel-heading">
+            <h3 class="pt-3 font-weight-bold">Internship Details:</h3>
+          </div>
+        <div class="panel-body p-3">
+          <form [formGroup]="detailsForm">
+            <div class="form-group pt-3">
+              <label for="Intern name">Intern Name:</label>
+              <div class="input-field" [class.error]="detailsForm.controls['internname'].dirty && detailsForm.hasError('required','internname')">
+                <span class="fa fa-user p-2"></span>
+                <input  formControlName="internname" type="text" placeholder="Enter Intern Name">
+              </div>
+            </div>
+            <small *ngIf="detailsForm.controls['internname'].dirty && detailsForm.hasError('required','internname')" class="text-danger">*User Name is required</small>
 
-      <label for="internship-name">Internship Name:</label>
-      <input type="text" id="internship-name" name="internship-name"><br><br>
+            <div class="form-group pt-3">
+              <label for="Intern name">Internship:</label>
+              <div class="input-field" [class.error]="detailsForm.controls['internship'].dirty && detailsForm.hasError('required','internship')">
+              <small><span class="fa fa-trophy p-2"></span></small>
+                <input formControlName="internship" type="text" placeholder="Enter Name of the Course">
+              </div>
+            </div>
+            <small *ngIf="detailsForm.controls['internship'].dirty && detailsForm.hasError('required','internship')" class="text-danger">*Email is required</small>
 
-      <label for="start-date">Start Date:</label>
-      <input type="date" id="start-date" name="start-date"><br><br>
+            <div class="form-group pt-3">
+              <label for="Intern name">Joining of Internship:</label>
+              <div class="input-field" [class.error]="detailsForm.controls['start'].dirty && detailsForm.hasError('required','start')">
+                <input formControlName="start" type="date" placeholder="Enter date of joining"></div>
+            </div>
+            <small *ngIf="detailsForm.controls['start'].dirty && detailsForm.hasError('required','start')" class="text-danger">*Password is required</small>
 
-      <label for="end-date">End Date:</label>
-      <input type="date" id="end-date" name="end-date"><br><br>
+            <div class="form-group pt-3">
+              <label for="Intern name">Completion of Internship:</label>
+              <div class="input-field" [class.error]="detailsForm.controls['end'].dirty && detailsForm.hasError('required','end')">
+                <input formControlName="end" type="date" placeholder="Enter date of joining"></div>
+            </div>
+            <small *ngIf="detailsForm.controls['end'].dirty && detailsForm.hasError('required','end')" class="text-danger">*Password is required</small>
 
-      <label for="picture">Upload Picture (jpg/png):</label>
-      <input type="file" id="picture" name="picture"><br><br>
+            <button type="submit" class="btn btn-primary btn-block mt-4 w-100" (click)="Submit()">Submit</button>
 
-      <input type="submit" value="Submit">
-    </form>
+          </form>
+        </div>
+    </div>
   </div>
+</div>
+
